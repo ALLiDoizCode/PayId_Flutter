@@ -1,4 +1,4 @@
-library PayId;
+library payid;
 
 /// A Calculator.
 class Calculator {

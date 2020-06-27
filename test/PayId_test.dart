@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:PayId/PayId.dart';
+import 'package:PayId/pay_id.dart';
 
 void main() {
   test('adds one to input values', () {

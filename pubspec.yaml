@@ -1,8 +1,8 @@
-name: PayId
-description: A new Flutter package project.
+name: payid
+description: To be able use the PayId Protocol with Flutter apps
 version: 0.0.1
-author:
-homepage:
+author: Jonathan Green dev.jonathan.green@gmail.com
+homepage: https://github.com/b20160/PayId_Flutter
 
 environment:
   sdk: ">=2.7.0 <3.0.0"

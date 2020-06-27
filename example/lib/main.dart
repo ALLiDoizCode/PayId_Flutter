@@ -3,7 +3,8 @@ import 'package:payid/pay_id.dart';
 
 void main() {
   runApp(MyApp());
-  print(Calculator().addOne(1));
+  //print(Calculator().addOne(1));
+  PayIdClient().getPayId("sam");
 }
 
 class MyApp extends StatelessWidget {

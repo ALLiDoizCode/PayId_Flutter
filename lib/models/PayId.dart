@@ -1,5 +1,4 @@
 import 'dart:convert';
-import '../network/client.dart';
 import '../network/router.dart';
 
 class PayId {
@@ -9,9 +8,9 @@ class PayId {
   PayId(this.addresses, this.id);
 
   factory PayId.fromJson(Map<String, dynamic> json) {
-    var addresses = json['addresses'] as List;
-    List<Address> balanceChanges =
-        addresses.map((i) => Address.fromJson(i)).toList();
+    var list = json['addresses'] as List;
+    List<Address> addresses =
+        list.map((i) => Address.fromJson(i)).toList();
     var id = json["payId"];
     return PayId(addresses, id);
   }
@@ -34,11 +33,13 @@ class Address {
 
 class AddressDetail {
   final String address;
+  final String tag;
   final String memo;
 
-  AddressDetail(this.address, this.memo);
+  AddressDetail(this.address, this.tag, this.memo);
 
   AddressDetail.fromJson(Map<String, dynamic> json)
       : address = json["address"],
+        tag = json["tag"],
         memo = json["memo"];
 }

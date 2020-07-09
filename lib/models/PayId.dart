@@ -28,7 +28,7 @@ class Address {
       : paymentNetwork = json["paymentNetwork"],
         environment = json["environment"],
         addressDetailsType = json["addressDetailsType"],
-        addressDetail = AddressDetail.fromJson(json["addressDetail"]);
+        addressDetail = AddressDetail.fromJson(json["addressDetails"]);
 }
 
 class AddressDetail {

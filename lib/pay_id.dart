@@ -63,7 +63,8 @@ class PayIdClient {
     }
     Map jsonString = jsonDecode(response.body);
     PayId payid = PayId.fromJson(jsonString);
-    print(payid.id);
+    print(request.headers );
+    print(payid.addresses[0].addressDetail.address);
     return response.body;
   }
 
